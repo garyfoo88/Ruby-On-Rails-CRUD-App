@@ -21,6 +21,10 @@
     <%= render 'home/header' %>
     <div class="container">
       <br />
+      <!-- Notice is set in friends_controller by scaffold -->
+      <% if notice %>
+        <%= render 'layouts/alerts' %>
+      <% end %>
       <%= yield %>
     </div>
   
